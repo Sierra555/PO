@@ -17,9 +17,15 @@ padding: 60px 0;
     text-align: center;}
 
 .btn--active:hover{
-        background-color: #1799E5;
-        color:#fff;
+    @extend %active-btn;
       } 
+.btn--active:active{
+    @extend %active-btn;
+}
+.btn--active:focus{
+    @extend %active-btn;
+}
+
 .examples{
     display:flex;
     flex-direction: column;
