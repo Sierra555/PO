@@ -62,7 +62,7 @@
         margin-bottom: 8px;
     }
 
-    &__sublist  {
+    &__sublist {
         display: flex;
         justify-content: space-between;
         margin-bottom: 8px;
@@ -92,7 +92,7 @@
 }
 
 .is--active,
-.is--active path{
+.is--active path {
     fill:$light;
 }
 
@@ -207,7 +207,7 @@
 }
 
 @media (max-width:450px) {
-    .examples__wrap{
+    .examples__wrap {
         padding: 0 5px;
     }
 
