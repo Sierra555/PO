@@ -23,7 +23,7 @@
     }
 
     &__slider-item {
-        padding:0 15px;
+        padding: 0 15px;
     }
 
     &__slider-card {
@@ -43,7 +43,7 @@
     }
 
     &__slider-content {
-        padding:15px 20px 20px;
+        padding: 15px 20px 20px;
     }
 
     &__list {
@@ -168,7 +168,7 @@
             box-shadow: 0 0 6px 0 rgba(0, 34, 55, 0.2);
             width: 64px;
             height: 64px;
-            top:45%;
+            top: 45%;
         }
 
         &__next{
@@ -197,28 +197,28 @@
             background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAxNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9IlBhdGgiIGQ9Ik0xMS43Mjk3IDI0LjE5NDZDMTIuMTM0NyAyNC42MDE4IDEyLjc5MTMgMjQuNjAxOCAxMy4xOTYzIDI0LjE5NDZDMTMuNjAxMiAyMy43ODc1IDEzLjYwMTIgMjMuMTI3NCAxMy4xOTYzIDIyLjcyMDNMMy4wMDM2MyAxMi41TDEzLjE5NjMgMi4yNzk3NUMxMy42MDEyIDEuODcyNjEgMTMuNjAxMiAxLjIxMjUgMTMuMTk2MyAwLjgwNTM1N0MxMi43OTEzIDAuMzk4MjE0IDEyLjEzNDcgMC4zOTgyMTQgMTEuNzI5NyAwLjgwNTM1N0wwLjgwMzc0MSAxMS43NjI4QzAuMzk4NzUzIDEyLjE2OTkgMC4zOTg3NTMgMTIuODMwMSAwLjgwMzc0MSAxMy4yMzcyTDExLjcyOTcgMjQuMTk0NloiIGZpbGw9IiMxQjk5RTUiLz4KPC9zdmc+Cg==');
             background-position: 50% 50%;
             background-repeat: no-repeat;
-            top:35%;
-            right:10px;
+            top: 35%;
+            right: 10px;
             width: 24px;
-            height:24px;
+            height: 24px;
         }
     }
 }
 
 @media (max-width:800px){
     .examples__wrap{
-        padding:0 35px;
+        padding: 0 35px;
     }
 }
 
 @media (max-width:780px){
     .js-examples__slider-card{
-        width:100%;
+        width: 100%;
     }
     
     .examples__wrap{
-        width:96vw;
-        padding:0 30px;
+        width: 96vw;
+        padding: 0 30px;
     }
 } 
 
@@ -230,13 +230,13 @@
 
 @media (max-width:625px){ 
     .js-control__btn{
-        top:47%;
+        top: 47%;
     }
 }
 
 @media (max-width:450px){
     .examples__wrap{
-        padding:0 5px;
+        padding: 0 5px;
     }
 
     .js-examples__slider-item{
