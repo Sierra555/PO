@@ -1,0 +1,182 @@
+.faq {
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding:0 24px;
+    }
+
+    &__contacts {
+        padding-right: 15px;
+    }
+
+    &__contacts-title {
+        padding-bottom: 16px;
+        font-size: 25px;
+        line-height: 1.2;
+        font-weight: 500;
+        text-transform: uppercase;    
+    }
+
+    &__contacts-subtitle {
+        font-size: 20px;
+        line-height: 1.25;
+        font-weight: 400;
+        padding-bottom: 40px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:24px;
+    }
+
+    &__box-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 13px;
+    }
+
+    &__link {
+        color:$light;
+        font-size: 20px;
+        line-height: 1.25;
+        font-weight: 600;
+        position: relative;
+        display: inline-block;
+    }
+
+    &__box-btn{
+        width: 243px;
+        height: 40px;
+        margin-bottom: 42px;
+    }
+  
+
+    &__img {
+        display: inline-block;
+        padding:5px;
+    }
+
+    &__questions {
+        padding-left: 30px;
+    }
+
+    &__questions-item {
+        border:1px solid #4DA6FF;
+        border-radius:7px;
+        padding:20px;
+        width: 570px;
+    }
+
+    &__questions-item + .faq__questions-item {
+        margin-top: 24px;
+    }
+
+    &__questions-title {
+        font-size: 20px;
+        line-height: 1.25;
+        font-weight: 600;
+        color:$dark;
+        cursor: pointer;
+        list-style: none;
+        position: relative;
+        padding-right: 20px;
+
+    }
+
+    &__questions-title::after {
+        content:url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.410765 0.910704C0.736202 0.585267 1.26384 0.585267 1.58928 0.910704L6.00002 5.32145L10.4108 0.910704C10.7362 0.585267 11.2638 0.585267 11.5893 0.910704C11.9147 1.23614 11.9147 1.76378 11.5893 2.08922L6.58928 7.08922C6.26384 7.41465 5.7362 7.41465 5.41077 7.08922L0.410765 2.08922C0.0853278 1.76378 0.0853278 1.23614 0.410765 0.910704Z' fill='%23FF7800'/%3E%3C/svg%3E ");
+        position: absolute;
+        right: 0;
+        top:0;
+    }
+
+    &__questions-text {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+        color:#222526;
+        padding: 10px 30px 0 0;
+    }
+  
+    &__questions-item[open] .faq__questions-title {
+        animation: sweep .5s ease-in-out;
+    }
+
+    &__questions-item[open] .faq__questions-title::after {
+        content:url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.41077 0.910704C5.7362 0.585267 6.26384 0.585267 6.58928 0.910704L11.5893 5.9107C11.9147 6.23614 11.9147 6.76378 11.5893 7.08922C11.2638 7.41465 10.7362 7.41465 10.4108 7.08922L6.00002 2.67847L1.58928 7.08922C1.26384 7.41465 0.736202 7.41465 0.410765 7.08922C0.0853278 6.76378 0.0853278 6.23614 0.410765 5.9107L5.41077 0.910704Z' fill='%23FF7800'/%3E%3C/svg%3E%0A");
+        margin-left: 14px;
+        position: absolute;
+        right: 0;
+        top:0;
+    }
+}
+@keyframes sweep {
+    from {
+        opacity: 0; margin-top: -10px;
+    }
+
+    to { 
+        opacity: 1; margin-top: 0;
+    }
+}
+
+@media (max-width:1100px){
+    .faq__questions-item{
+        width:445px;
+    }
+}
+
+@media (max-width:900px){
+    .faq__questions-item{
+        width:345px;
+    }
+}
+
+@media (max-width:768px){
+    .faq{
+        &__wrap {
+            flex-direction: column-reverse;
+        }
+
+        &__questions{
+            padding:0 0 30px;
+        }
+
+        &__questions-item {
+            width:100%;
+        }
+
+        &__contacts{
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+        }
+
+        &__box{
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width:450px){
+    .faq {
+        &__wrap{
+            padding:0 15px;
+        }
+
+        &__box-btn{
+            width: 100%;
+        }
+
+        &__btn{
+            width: 100%;
+        }
+    }
+
+    .section__title{
+        font-size: 25px;
+        line-height: 1.2;
+    }
+}

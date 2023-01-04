@@ -1,9 +1,9 @@
 
 const slider = tns({
-    container: '.examples__slider',
+    container: '.js-examples__slider',
     items: 3,
     slideBy: 1,
-    controlsContainer: ".customize-controls",
+    controlsContainer: '.js-examples__slider-controls',
     mouseDrag: true,
     loop: true,
     responsive: {
@@ -26,16 +26,16 @@ buttons.forEach(btn => {
 
 });
 
-const arrowSvg = document.querySelectorAll('.control__svg'),
-    controls = document.querySelectorAll('.control__btn'),
-    path = document.querySelectorAll('.control__svg path');
+const arrowSvg = document.querySelectorAll('.js-control__svg'),
+    controls = document.querySelectorAll('.js-control__btn'),
+    path = document.querySelectorAll('.js-control__svg path');
 
 
 document.addEventListener('click', (e) => {
-    controls.forEach(item => item.classList.remove("control_active"));
-    arrowSvg.forEach(item => item.classList.remove("control_active"));
-    path.forEach(item => item.classList.remove("control_active"));
-    if (e.target.closest('.control__btn')) {
-        e.target.classList.add("control_active");
+    controls.forEach(item => item.classList.remove("is--active"));
+    arrowSvg.forEach(item => item.classList.remove("is--active"));
+    path.forEach(item => item.classList.remove("is--active"));
+    if (e.target.closest('.js-control__btn')) {
+        e.target.classList.add("is--active");
     }
 });
