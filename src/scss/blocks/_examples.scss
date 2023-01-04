@@ -222,17 +222,6 @@
 } 
 
 @media (max-width:768px){
-    .section{
-        &__heading{
-            padding:0 20px;
-        }
-
-        &__title{
-            font-size: 25px;
-            line-height: 1.2;        
-        }
-    }
-    
     .js-examples__carousel{
         max-width: 706px;
     }
