@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     &__wrap {
         padding: 0 45px;
         position: relative;
@@ -60,12 +61,12 @@
     &__list-desc {
         margin-bottom: 8px;
     }
+
     &__sublist  {
         display: flex;
         justify-content: space-between;
         margin-bottom: 8px;
     }
-
 }
 
 .js-control {
