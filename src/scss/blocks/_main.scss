@@ -1,9 +1,9 @@
 html,
 body {
 	height: 100vh;
-    font-family:'Catamaran', sans-serif;
+	font-family:'Catamaran', sans-serif;
 	font-weight: 400;
-    color:$dark;
+	color:$dark;
 	font-size: 16px;
 	line-height: 1.5;
 }
@@ -11,12 +11,12 @@ body {
 .container{
 	max-width: 1170px;
 	margin: 0 auto;
-    padding: 0 20px;
+	padding: 0 20px;
 }
 
 @media (max-width:800px){
 	.container_pd-0px{
-        padding: 0;
-    }
+		padding: 0;
+	}
 }
 
