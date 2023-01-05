@@ -17,16 +17,8 @@
     &__content {
         padding-bottom: 60px;
     }
-}
 
-@media (max-width:450px) {
-    .section__title {
-        font-size: 25px;
-    }
-}
-
-@media (max-width:768px) {
-    .section {
+    @media (max-width:768px) {
         &__heading {
             padding: 0 20px;
         }
@@ -36,3 +28,6 @@
         }
     }
 }
+
+
+
