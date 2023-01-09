@@ -1,0 +1,21 @@
+html,
+body {
+	height: 100vh;
+	font-family:'Catamaran', sans-serif;
+	font-weight: 400;
+	color:$dark;
+	line-height: 1.5;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+@media (max-width:800px) {
+	.container_p_0\@mobile {
+		padding: 0;
+	}
+}
+

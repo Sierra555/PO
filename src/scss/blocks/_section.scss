@@ -1,0 +1,35 @@
+.section { 
+    padding: 30px 0;
+
+    &_d_f {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__heading {
+        text-align: center;
+        margin-bottom: 40px; 
+    }
+    
+    &__title {
+        font-size: 35px;
+        line-height: 1.2;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    @media (max-width:768px) {
+        &__heading {
+            padding: 0 20px;
+        }
+
+        &__title {
+            font-size: 25px;
+        }
+    }
+}
+
+
+
