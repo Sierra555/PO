@@ -33,6 +33,11 @@
         display: inline-flex;
         align-items: center;
         gap: 13px;
+
+        &_btn{
+            width: 243px;
+            margin-bottom: 42px;
+        }
     }
 
     &__link {
@@ -43,13 +48,6 @@
         position: relative;
         display: inline-block;
     }
-
-    &__box-btn {
-        width: 243px;
-        height: 40px;
-        margin-bottom: 42px;
-    }
-  
 
     &__img {
         display: inline-block;
